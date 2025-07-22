@@ -31,5 +31,4 @@ jobs:
             cd ~/youtube_srt_download_service
             echo "API_KEY=${{ secrets.API_KEY }}" > .env
             pip install -r requirements.txt
-            pkill -f app.py || true
-            nohup python3 app.py > service.log 2>&1 & 
+            sudo systemctl restart youtube_srt_download 
