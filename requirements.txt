@@ -1,4 +1,5 @@
 Flask
 yt-dlp
 flask-limiter 
-python-dotenv 
+python-dotenv
+webvtt-py
